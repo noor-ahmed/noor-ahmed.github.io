@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Noor Ahmed Biswas | Software Project Lead</title>
+
+  <meta
+    name="description"
+    content="Noor Ahmed Biswas — Software Project Lead, Technical Project Manager and Agile Delivery Lead with 10+ years of software industry experience."
+  />
+
+  <style>
+    :root {
+      --primary: #12355b;
+      --primary-light: #eaf2f8;
+      --text: #17202a;
+      --muted: #667085;
+      --light: #f7f9fc;
+      --white: #ffffff;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --radius: 16px;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: auto;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #344054;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          #f7f9fc 0%,
+          #eef4fa 100%
+        );
+      padding: 110px 0 90px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 0.8fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 7px 14px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      color: var(--primary);
+      font-size: 23px;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 700px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    .btn-outline {
+      border: 1px solid #b8c2cc;
+      color: var(--primary);
+      background: white;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-light);
+    }
+
+    .hero-card {
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .hero-card .initials {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .hero-card h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .hero-card p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    section:nth-child(even) {
+      background: var(--light);
+    }
+
+    .section-heading {
+      margin-bottom: 45px;
+    }
+
+    .section-heading span {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .section-heading h2 {
+      font-size: 36px;
+      margin-top: 7px;
+      letter-spacing: -0.7px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 700px;
+      margin-top: 10px;
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .stat {
+      padding: 28px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 34px;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      color: #475467;
+    }
+
+    .highlight-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .highlight-box h3 {
+      margin-bottom: 18px;
+      color: var(--primary);
+    }
+
+    .highlight-box ul {
+      padding-left: 20px;
+      color: #475467;
+    }
+
+    .highlight-box li {
+      margin-bottom: 10px;
+    }
+
+    /* =========================
+       EXPERIENCE
+    ========================= */
+
+    .timeline {
+      position: relative;
+      max-width: 950px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 45px 35px;
+      border-left: 2px solid #d8e0e8;
+    }
+
+    .timeline-item:last-child {
+      border-left: none;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .timeline-item h3 {
+      font-size: 21px;
+      margin-bottom: 4px;
+    }
+
+    .timeline-item .company {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .timeline-item .date {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 5px 0 15px;
+    }
+
+    .timeline-item ul {
+      padding-left: 20px;
+      color: #475467;
+    }
+
+    .timeline-item li {
+      margin-bottom: 8px;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .project {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      transition: 0.25s;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+    }
+
+    .project-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 5px 10px;
+      border-radius: 50px;
+      margin-bottom: 15px;
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #344054;
+    }
+
+    /* =========================
+       EDUCATION
+    ========================= */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .education-card {
+      background: white;
+      padding: 30px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .education-card h3 {
+      margin-bottom: 6px;
+    }
+
+    .education-card .institution {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .education-card p {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    /* =========================
+       CV
+    ========================= */
+
+    .cv-box {
+      background: var(--primary);
+      color: white;
+      padding: 45px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cv-box h2 {
+      margin-bottom: 8px;
+    }
+
+    .cv-box p {
+      opacity: 0.8;
+    }
+
+    .cv-box .btn {
+      background: white;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card h3 {
+      margin-bottom: 15px;
+    }
+
+    .contact-item {
+      margin-bottom: 15px;
+    }
+
+    .contact-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-item a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #101828;
+      color: white;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    footer p {
+      color: #98a2b3;
+      font-size: 14px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 850px) {
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects,
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        flex-direction: column;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .cv-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 550px) {
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .section-heading h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header>
+    <div class="container">
+      <nav>
+
+        <a href="#home" class="logo">
+          Noor Ahmed Biswas
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+          ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <span class="eyebrow">
+            SOFTWARE PROJECT LEAD
+          </span>
+
+          <h1>
+            Noor Ahmed<br />
+            Biswas
+          </h1>
+
+          <h2>
+            Technical Project Manager · Agile Delivery Lead · Product Owner
+          </h2>
+
+          <p>
+            Software Project Management Professional with 10+ years of
+            experience delivering enterprise, FinTech, SaaS, logistics,
+            retail and web/mobile software solutions.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a
+              href="https://www.linkedin.com/in/nahmed-bd/"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              View LinkedIn
+            </a>
+
+            <a href="#experience" class="btn btn-outline">
+              View Experience
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <div class="initials">
+            NB
+          </div>
+
+          <h3>
+            Software Project Lead
+          </h3>
+
+          <p>
+            Enosis Solutions · Dhaka, Bangladesh
+          </p>
+
+          <br />
+
+          <p>
+            Agile delivery · Stakeholder management ·
+            Risk management · Product ownership ·
+            Technical solution review
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         STATS
+    ========================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="stats">
+
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Years in Software</span>
+          </div>
+
+          <div class="stat">
+            <strong>6</strong>
+            <span>Project Teams Currently Led</span>
+          </div>
+
+          <div class="stat">
+            <strong>21</strong>
+            <span>Team Members Across Projects</span>
+          </div>
+
+          <div class="stat">
+            <strong>95%</strong>
+            <span>On-Time Release Rate</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span>About Me</span>
+          <h2>Bridging technology and delivery</h2>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-text">
+
+            <p>
+              I am a Software Project Lead with more than 10 years of
+              experience in the software industry, combining a strong
+              engineering background with project and delivery leadership.
+            </p>
+
+            <p>
+              I started my career as a Software Engineer in 2015 and
+              gradually moved into technical leadership and project
+              management. This background allows me to work effectively
+              with engineering teams while also managing stakeholders,
+              requirements, risks, timelines and delivery expectations.
+            </p>
+
+            <p>
+              In my current role, I lead multiple project teams and work
+              closely with engineers, clients and senior stakeholders to
+              ensure that projects remain aligned with business goals and
+              delivery commitments.
+            </p>
+
+          </div>
+
+          <div class="highlight-box">
+
+            <h3>What I Bring</h3>
+
+            <ul>
+              <li>End-to-end software project delivery</li>
+              <li>Agile team leadership</li>
+              <li>Stakeholder and client management</li>
+              <li>Risk and dependency management</li>
+              <li>Technical solution review</li>
+              <li>Product ownership experience</li>
+              <li>Data-driven delivery reporting</li>
+              <li>Engineering background</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCE
+    ========================== -->
+
+    <section id="experience">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>Career</span>
+
+          <h2>Professional Experience</h2>
+
+          <p>
+            A progression from software engineering into project and
+            delivery leadership.
+          </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+          <!-- ENOSIS -->
+
+          <div class="timeline-item">
+
+            <h3>
+              Software Project Lead
+            </h3>
+
+            <div class="company">
+              Enosis Solutions
+            </div>
+
+            <div class="date">
+              Aug 2022 – Present · Dhaka, Bangladesh
+            </div>
+
+            <ul>
+
+              <li>
+                Manage end-to-end delivery of 10+ SaaS, FinTech,
+                logistics and retail software projects.
+              </li>
+
+              <li>
+                Lead multiple Agile project teams across backend,
+                frontend, mobile, QA and DevOps functions.
+              </li>
+
+              <li>
+                Lead six project teams with a combined team size
+                of 21 members.
+              </li>
+
+              <li>
+                Manage roadmaps and execution for programs with
+                cumulative project budgets exceeding USD 1.5M.
+              </li>
+
+              <li>
+                Improved on-time release rate from approximately
+                75% to 95%.
+              </li>
+
+              <li>
+                Translate business requirements into 300+ user
+                stories and epics.
+              </li>
+
+              <li>
+                Act as a primary stakeholder interface for
+                enterprise clients and senior leadership.
+              </li>
+
+              <li>
+                Manage project risks, issues and dependencies,
+                including mitigation of 20+ high-impact risks.
+              </li>
+
+              <li>
+                Use delivery dashboards covering velocity,
+                burn-down, defects and project progress.
+              </li>
+
+              <li>
+                Led UAT and production releases for platforms
+                serving 100K+ end users.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!-- OTTO -->
+
+          <div class="timeline-item">
+
+            <h3>
+              Analyst Programmer / Technical Project Contributor
+            </h3>
+
+            <div class="company">
+              OTTO International
+            </div>
+
+            <div class="date">
+              Jul 2021 – Jan 2022 · Dhaka, Bangladesh
+            </div>
+
+            <ul>
+
+              <li>
+                Supported an enterprise microservices ecosystem
+                operating across 21 countries.
+              </li>
+
+              <li>
+                Supported systems used by 1,000+ internal users.
+              </li>
+
+              <li>
+                Contributed to integration, deployment and SDLC
+                governance.
+              </li>
+
+              <li>
+                Improved scalability and reduced manual effort
+                by approximately 20%.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!-- NIMBLE -->
+
+          <div class="timeline-item">
+
+            <h3>
+              Mid-Senior Software Engineer
+            </h3>
+
+            <div class="company">
+              NimbleHQ
+            </div>
+
+            <div class="date">
+              Jul 2020 – Jun 2021 · Thailand
+            </div>
+
+            <ul>
+
+              <li>
+                Worked on The1 Loyalty Platform supporting
+                millions of active users.
+              </li>
+
+              <li>
+                Developed scalable backend services and APIs.
+              </li>
+
+              <li>
+                Collaborated with Agile teams across technical
+                and business functions.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!-- WELLDEV -->
+
+          <div class="timeline-item">
+
+            <h3>
+              Senior Software Engineer & Deputy Team Lead
+            </h3>
+
+            <div class="company">
+              WellDev
+            </div>
+
+            <div class="date">
+              Jul 2017 – Jul 2020 · Dhaka, Bangladesh
+            </div>
+
+            <ul>
+
+              <li>
+                Delivered enterprise SaaS and B2B platforms
+                across ERP, CRM, eCommerce and logistics.
+              </li>
+
+              <li>
+                Worked with teams of 6–10 engineers.
+              </li>
+
+              <li>
+                Led modernization of legacy Ruby on Rails
+                applications.
+              </li>
+
+              <li>
+                Mentored engineers and supported technical
+                leadership activities.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!-- SUN* -->
+
+          <div class="timeline-item">
+
+            <h3>
+              System Development Engineer
+            </h3>
+
+            <div class="company">
+              Sun* / Formerly Framgia Japan
+            </div>
+
+            <div class="date">
+              Aug 2015 – Jun 2017
+            </div>
+
+            <ul>
+
+              <li>
+                Developed full-stack web applications using
+                Ruby on Rails and related technologies.
+              </li>
+
+              <li>
+                Worked across the complete software development
+                lifecycle.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section id="projects">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>Selected Work</span>
+
+          <h2>Projects & Delivery Highlights</h2>
+
+          <p>
+            Selected examples of products and software delivery
+            initiatives I have led or contributed to.
+          </p>
+
+        </div>
+
+
+        <div class="projects">
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              PRODUCT LEADERSHIP
+            </span>
+
+            <h3>
+              Enosis Outsourcing Platform
+            </h3>
+
+            <p>
+              Led the organization's product team from concept
+              through production readiness for
+              <strong>enosisoutsourcing.com</strong>, an outsourcing
+              platform connecting companies requiring software
+              outsourcing with outsourcing providers.
+            </p>
+
+          </div>
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              RESEARCH PLATFORM
+            </span>
+
+            <h3>
+              Structured & Unstructured Data Platform
+            </h3>
+
+            <p>
+              Led software delivery for a research-focused platform
+              designed to work with structured and unstructured
+              information.
+            </p>
+
+          </div>
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              GOVERNMENT PLATFORM
+            </span>
+
+            <h3>
+              Washington DC Housing Registration Platform
+            </h3>
+
+            <p>
+              Managed delivery activities for a housing registration
+              platform serving an important public-facing business
+              process.
+            </p>
+
+          </div>
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              FINTECH / SAAS
+            </span>
+
+            <h3>
+              Enterprise SaaS & FinTech Solutions
+            </h3>
+
+            <p>
+              Managed delivery across multiple SaaS, FinTech,
+              logistics and retail software initiatives with
+              concurrent project responsibilities.
+            </p>
+
+          </div>
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              PRODUCT OWNER
+            </span>
+
+            <h3>
+              New Application Launches
+            </h3>
+
+            <p>
+              Worked as Product Owner for three applications,
+              supporting requirements, prioritization, delivery
+              coordination and production launch.
+            </p>
+
+          </div>
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              MODERNIZATION
+            </span>
+
+            <h3>
+              Legacy Application Modernization
+            </h3>
+
+            <p>
+              Contributed to modernization of legacy applications,
+              including framework upgrades, testing improvements
+              and delivery planning.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+
+    <section id="skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>Capabilities</span>
+
+          <h2>Core Skills</h2>
+
+        </div>
+
+
+        <div class="skills">
+
+          <span class="skill">Project Management</span>
+          <span class="skill">Agile</span>
+          <span class="skill">Scrum</span>
+          <span class="skill">Kanban</span>
+          <span class="skill">SAFe</span>
+          <span class="skill">SDLC</span>
+          <span class="skill">Delivery Management</span>
+          <span class="skill">Stakeholder Management</span>
+          <span class="skill">Client Management</span>
+          <span class="skill">Risk Management</span>
+          <span class="skill">Dependency Management</span>
+          <span class="skill">Release Management</span>
+          <span class="skill">Change Management</span>
+          <span class="skill">Scope Management</span>
+          <span class="skill">Resource Planning</span>
+          <span class="skill">Roadmapping</span>
+          <span class="skill">Backlog Grooming</span>
+          <span class="skill">Sprint Planning</span>
+          <span class="skill">Velocity Tracking</span>
+          <span class="skill">KPI Reporting</span>
+          <span class="skill">UAT Management</span>
+          <span class="skill">Go-Live Support</span>
+          <span class="skill">Product Ownership</span>
+          <span class="skill">Technical Solution Review</span>
+          <span class="skill">Ruby on Rails</span>
+          <span class="skill">React</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Flutter</span>
+          <span class="skill">REST APIs</span>
+          <span class="skill">Microservices</span>
+          <span class="skill">AWS</span>
+          <span class="skill">Docker</span>
+          <span class="skill">CI/CD</span>
+          <span class="skill">Jira</span>
+          <span class="skill">Confluence</span>
+          <span class="skill">GitHub</span>
+          <span class="skill">Claude</span>
+          <span class="skill">Gemini</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+
+    <section id="education">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>Background</span>
+
+          <h2>Education & Professional Development</h2>
+
+        </div>
+
+
+        <div class="education-grid">
+
+          <div class="education-card">
+
+            <h3>
+              Bachelor of Science in Computer Science & Engineering
+            </h3>
+
+            <div class="institution">
+              Ahsanullah University of Science & Technology
+            </div>
+
+            <p>
+              Dhaka, Bangladesh · 2015
+            </p>
+
+            <p>
+              CGPA: 3.25 / 4.00
+            </p>
+
+          </div>
+
+
+          <div class="education-card">
+
+            <h3>
+              Agile & Project Management
+            </h3>
+
+            <div class="institution">
+              Professional Training
+            </div>
+
+            <p>
+              Agile Project Management · Scrum · Kanban ·
+              SDLC · Certified Scrum Master training
+            </p>
+
+            <p>
+              PMP 35 PDU Training – PMaspire, Dhaka
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CV
+    ========================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="cv-box">
+
+          <div>
+
+            <h2>
+              Interested in working together?
+            </h2>
+
+            <p>
+              View my complete professional profile and experience.
+            </p>
+
+          </div>
+
+          <!--
+            Replace "Noor-Ahmed-Biswas-CV.pdf"
+            with the actual location of your CV.
+          -->
+
+          <a
+            href="Noor-Ahmed-Biswas-CV.pdf"
+            target="_blank"
+            class="btn"
+          >
+            View CV
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>Contact</span>
+
+          <h2>Let's connect</h2>
+
+          <p>
+            For professional opportunities, project discussions
+            or collaboration, feel free to connect with me.
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+
+            <h3>
+              Professional Profile
+            </h3>
+
+            <div class="contact-item">
+
+              <span>LinkedIn</span>
+
+              <a
+                href="https://www.linkedin.com/in/nahmed-bd/"
+                target="_blank"
+              >
+                linkedin.com/in/nahmed-bd
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-card">
+
+            <h3>
+              Contact Information
+            </h3>
+
+            <div class="contact-item">
+
+              <span>Email</span>
+
+              <a href="mailto:biswas.noorahmed@gmail.com">
+                biswas.noorahmed@gmail.com
+              </a>
+
+            </div>
+
+            <div class="contact-item">
+
+              <span>Phone</span>
+
+              <a href="tel:+8801722866941">
+                +880 1722 866 941
+              </a>
+
+            </div>
+
+            <div class="contact-item">
+
+              <span>Location</span>
+
+              Dhaka, Bangladesh
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <p>
+        © <span id="year"></span> Noor Ahmed Biswas.
+        All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    function toggleMenu() {
+      document
+        .getElementById("navLinks")
+        .classList
+        .toggle("active");
+    }
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+          document
+            .getElementById("navLinks")
+            .classList
+            .remove("active");
+
+        });
+
+      });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+</html>
