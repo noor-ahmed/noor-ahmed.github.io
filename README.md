@@ -41,3 +41,7 @@ Check that:
 - The branch is `main` and folder is `/ (root)`.
 - You opened the exact Pages URL shown in GitHub Settings after deployment.
 - For a project repository, the repository name is included in the URL.
+
+
+## Personal page
+The professional portfolio remains in `index.html`. Personal/family content is intentionally separated into `personal.html` and linked from the navigation as **Personal**.
